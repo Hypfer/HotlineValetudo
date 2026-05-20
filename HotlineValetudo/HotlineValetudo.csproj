@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-HotlineValetudo-28d8ce05-57cc-47d7-977d-7a398864ba47</UserSecretsId>
+        <RootNamespace>HotlineValetudo</RootNamespace>
+        <NoWarn>NU1902;NU1903</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GroovyG711" Version="0.1.2"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.15"/>
+        <PackageReference Include="SIPSorcery" Version="10.0.7"/>
+        <PackageReference Include="SIPSorceryMedia.Abstractions" Version="10.0.7"/>
+        <PackageReference Include="org.k2fsa.sherpa.onnx" Version="1.12.8"/>
+        <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="models\tts\**\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Fax\images\*.tif">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Audio\holdmusic\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Sstv\images\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Audio\numberstation\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+## Build output
+**/bin/
+**/obj/
+
+## IDE
+*.sln.DotSettings.user
+.idea/
+
+## Secrets
+appsettings.Development.json
+
+## Published artifacts
+*.zip
+*.exe
+*.dll
+*.pdb
+
+## Audio/dev clutter
+*.wav
+*.ogg
+*.csv
