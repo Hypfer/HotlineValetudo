@@ -15,7 +15,3 @@ appsettings.Development.json
 *.dll
 *.pdb
 
-## Audio/dev clutter
-*.wav
-*.ogg
-*.csv
